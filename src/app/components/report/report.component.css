@@ -1,0 +1,12 @@
+.container {
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.timeTableBox {
+    display: block;
+    background-color: #f3f3f3;
+    border: 1px solid grey;
+    padding: 1rem;
+}

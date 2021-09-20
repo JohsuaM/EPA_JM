@@ -1,0 +1,47 @@
+#ticketSubmit {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#quantity {
+    width: 30px;
+}
+
+.timetable {
+    padding: 2rem 0rem;
+    margin: 0 1rem;
+}
+
+.timeTableBox {
+    display: block;
+    background-color: #f3f3f3;
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.selected {
+    background-color: rgb(173, 247, 173);
+}
+
+.full {
+    background-color: rgb(253, 142, 142);
+}

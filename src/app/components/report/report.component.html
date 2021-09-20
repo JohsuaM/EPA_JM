@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Booking report</h2>
+    <div *ngFor="let journey of CurrentJourneys" class="timeTableBox">
+        <div>{{journey.Hour}}:{{journey.Min == 0 ? '00' : journey.Min}}</div>
+        <div>Train Name: {{journey.TrainName}}</div>
+        <div>Departure station: {{journey.Departure}}</div>
+        <div>Used seats: {{journey.TotalPassengers}}</div>
+        <div>Carridges needed: {{ roundup(journey.TotalPassengers) }}</div>
+    </div>
+</div>
