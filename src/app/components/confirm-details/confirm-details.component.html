@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="border">
+        <h2>Passenger details</h2>
+        <h3>Name:</h3>
+        <span>{{ OutboundReservation ? OutboundReservation.Name : ''}}</span>
+        <h3>Number of seats booked:</h3>
+        <span>{{ OutboundReservation ? OutboundReservation.numberOfPassengers : ''}}</span>
+    </div>
+
+    <div class="border">
+        <h2>Outbound</h2>
+        <h3>Train name:</h3>
+        <span>{{ OutboundJourney ? OutboundJourney.TrainName : ''}}</span>
+        <h3>Departure station:</h3>
+        <span>{{ OutboundJourney ? OutboundJourney.Departure : ''}}</span>
+        <h3>Destination Station:</h3>
+        <span>{{ OutboundJourney ? OutboundJourney.Destination : ''}}</span>
+        <h3>Departure time:</h3>
+        <span>{{ OutboundJourney ? OutboundJourney.Hour + ':' + (OutboundJourney.Min == 0 ? '00' : '30') : ''}}</span>
+    </div>
+
+    <div class="border">
+        <h2>Return</h2>
+        <h3>Train name:</h3>
+        <span>{{ ReturnJourney ? ReturnJourney.TrainName : ''}}</span>
+        <h3>Departure station:</h3>
+        <span>{{ ReturnJourney ? ReturnJourney.Departure : ''}}</span>
+        <h3>Destination Station:</h3>
+        <span>{{ ReturnJourney ? ReturnJourney.Destination : ''}}</span>
+        <h3>Departure time:</h3>
+        <span>{{ ReturnJourney ? ReturnJourney.Hour + ':' + (ReturnJourney.Min == 0 ? '00' : '30') : ''}}</span>
+    </div>
+</div>
